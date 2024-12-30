@@ -1,0 +1,206 @@
+/* General */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 80%; /* Asegura que el body ocupe toda la pantalla */
+    
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    flex-direction: column; /* Apilamiento vertical de los elementos */
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    background-color: #fff;
+    position: relative;
+    overflow: hidden; /* Evita que los textos se salgan de la pantalla */
+}
+
+/* Imagen centrada */
+.hero-section .image-container img {
+    width: 260px; /* Tamaño de la imagen */
+    height: 260px;
+    border-radius: 50%; /* Círculo */
+    object-fit: cover;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px; /* Espacio entre la imagen y el texto */
+}
+
+/* Texto debajo de la imagen */
+.programador-info {
+    text-align: center;
+    font-size: 1.25rem;
+    color: #333;
+    font-family: "Arial", sans-serif;
+}
+
+/* Divider Line */
+.line-divider {
+    margin: 20px;
+    text-align: center;
+    font-size: 1.25rem;
+    color: #333;
+    position: relative;
+    padding: 5px;
+    font-family: "proxima nova semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.line-divider::before,
+.line-divider::after {
+    content: " ";
+    display: inline-block;
+    width: 25%;
+    border-top: 2px solid #888;
+    margin: 0 10px;
+    position: absolute;
+    top: 50%;
+}
+
+.line-divider::before {
+    left: 0;
+}
+
+.line-divider::after {
+    right: 0;
+}
+
+/* Projects Section */
+.projects-section {
+    background-color: #fff;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 30px 0;
+}
+
+.row {
+    margin-top: 20px;
+}
+
+.project-card-link {
+    text-decoration: none;
+}
+
+.project-card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+}
+
+.project-card .card-body {
+    padding: 20px;
+    position: relative;
+}
+
+.project-card .card-body h5 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project-card .card-body p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* Flecha de dirección */
+.arrow-icon {
+    font-size: 1.25rem;
+    color: #333;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+/* Efecto cuando el mouse pasa sobre la tarjeta */
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Mostrar la flecha cuando el mouse está sobre la tarjeta */
+.project-card:hover .arrow-icon {
+    opacity: 1;
+}
+
+/*contacto*/
+
+        /* Estilo para los iconos y nombres de redes sociales */
+        .social-media a {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .social-media img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .social-media p {
+            font-weight: bold;
+            margin: 0;
+        }
+
+        /* Colores personalizados para los iconos */
+        .twitter-logo { color: #1DA1F2; } /* Color Twitter */
+        .facebook-logo { color: #1877F2; } /* Color Facebook */
+        .linkedin-logo { color: #0077B5; } /* Color LinkedIn */
+        .instagram-logo { color: #E4405F; } /* Color Instagram */
+
+        /* Fondo gris claro para la parte inferior */
+        .contact-form-section {
+            background-color: #f4f4f4;
+            padding: 50px 0;
+        }
+
+        /* Centrar las imágenes en las columnas */
+        .img-fluid {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        
+    /*para intereses*/
+    
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .intereses-header {
+            text-align: center;
+            margin-bottom: 30px;
+            margin-top: 20px;
+        }
+        
+            .text-shadow-md {
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }    
+    
+    
+   

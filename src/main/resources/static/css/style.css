@@ -1,0 +1,91 @@
+body {
+    margin-top: 80px; /* Ajusta este valor al alto de tu navbar */
+}
+
+/* Estilo para la barra de navegación */
+.custom-navbar {
+    background-color: #000000; /* Fondo negro para el navbar */
+    color: white; /* Texto en blanco en todo el navbar */
+    z-index: 1050; /* Para asegurarse de que el navbar esté encima de otros elementos */
+    height: 15vh; /* Establecer altura al 15% del viewport */
+    display: flex; /* Asegura que el contenido se alinee correctamente */
+    align-items: center; /* Centra verticalmente los elementos dentro de la barra */
+}
+
+/* Estilo para el texto de la marca (Kory Store) */
+.navbar-brand {
+    font-size: 1.7rem; /* Tamaño de la fuente para la marca */
+    color: white; /* Color blanco para el texto de la marca */
+    font-weight: bold; /* Estilo de fuente en negrita */
+}
+
+/* Estilo para el texto de la marca cuando se pasa el mouse */
+.navbar-brand:hover {
+    color: #333333; /* Gris oscuro cuando se pasa el mouse sobre la marca */
+}
+
+/* Estilo para los enlaces en el navbar */
+.navbar-nav .nav-link {
+    color: white; /* Color blanco para los enlaces */
+    font-size: 1.1rem; /* Tamaño de la fuente para los enlaces */
+}
+
+/* Estilo para los enlaces cuando se pasa el mouse sobre ellos */
+.navbar-nav .nav-link:hover {
+    color: #333333; /* Gris oscuro cuando el mouse pasa sobre el enlace */
+}
+
+/* Estilo para los enlaces cuando se hace clic o están activos */
+.navbar-nav .nav-link.active {
+    color: #333333; /* Gris oscuro cuando está activo */
+    background-color: #f0f0f0; /* Fondo gris claro para que se note como opción activa */
+}
+
+/* Estilo para el texto de la marca cuando se hace clic */
+.navbar-brand:active {
+    color: #333333; /* Cambia a gris oscuro cuando se hace clic en el texto de la marca */
+}
+
+/* Estilo para los iconos de carrito y usuario */
+.navbar-nav .nav-link i {
+    font-size: 24px; /* Tamaño de los iconos */
+    color: white; /* Color blanco para los iconos */
+}
+
+/* Fondo del botón de menú hamburguesa */
+.navbar-toggler {
+    border: none; /* Elimina el borde */
+    background-color: #000000; /* Fondo negro para el botón hamburguesa */
+}
+
+/* Estilo para el ícono del menú hamburguesa */
+.navbar-toggler-icon {
+    background-color: white; /* Color blanco para el ícono */
+    background-image: none; /* Elimina cualquier imagen por defecto */
+    width: 30px; /* Asegura que el ícono tenga un tamaño adecuado */
+    height: 20px; /* Ajusta la altura del ícono */
+    border-radius: 5px; /* Añade bordes redondeados si es necesario */
+}
+
+/* Estilo para el fondo negro en el menú colapsable */
+.custom-navbar .navbar-collapse {
+    background-color: #000000; /* Fondo negro para el menú desplegable */
+}
+
+/* Asegurar que los iconos de redes sociales se muestren en fila (horizontal) */
+.custom-navbar .navbar-collapse .navbar-nav {
+    display: flex;
+    gap: 1rem; /* Espaciado entre los iconos */
+    justify-content: center; /* Centra los iconos horizontalmente */
+    flex-wrap: nowrap; /* Evita que se apilen en dispositivos pequeños */
+}
+
+/* Asegura que los iconos de redes sociales se alineen correctamente en el navbar */
+.custom-navbar .navbar-collapse .navbar-nav li {
+    display: inline-block; /* Asegura que los iconos se alineen en línea */
+}
+
+/* Para asegurar que el menú hamburguesa tenga íconos blancos */
+.navbar-toggler-icon {
+    background-color: white; /* Íconos de menú hamburguesa en blanco */
+}
